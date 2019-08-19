@@ -5,7 +5,7 @@
 */
 
 import React from 'react';
-import Button from 'components/Button'
+import Button from 'components/Button';
 import { capitalize } from 'lodash';
 import PropTypes from 'prop-types';
 

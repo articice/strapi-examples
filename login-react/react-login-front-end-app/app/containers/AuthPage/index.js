@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 import Button from 'components/Button';
 import FormDivider from 'components/FormDivider';
 import Input from 'components/Input';
-import Logo from 'images/logo_strapi.png';
+import Logo from 'images/logo_socure.png';
 import SocialLink from 'components/SocialLink';
 
 // Utils
@@ -84,7 +84,7 @@ export class AuthPage extends React.Component { // eslint-disable-line react/pre
   render() {
     const divStyle = this.props.match.params.authType === 'register' ? { marginTop: '3.2rem' } : { marginTop: '.9rem' };
     const inputs = get(form, this.props.match.params.authType) || [];
-    const providers = ['discord', 'facebook', 'github', 'google', 'microsoft', 'twitch', 'twitter']; // To remove a provider from the list just delete it from this array...
+    const providers = ['github', 'google', 'socure']; // To remove a provider from the list just delete it from this array...
 
     return (
       <div className="authPage">
